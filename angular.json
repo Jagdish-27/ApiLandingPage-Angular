@@ -68,7 +68,8 @@
               "browserTarget": "Api-LandingPage-Angular:build:production"
             },
             "development": {
-              "browserTarget": "Api-LandingPage-Angular:build:development"
+              "browserTarget": "Api-LandingPage-Angular:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -100,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -1,0 +1,69 @@
+@import "../../../styles.scss";
+
+.container {
+  @include flex-items;
+  justify-content: space-between;
+  padding-bottom: 3.5rem;
+
+  @media(max-width:1300px){
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    @media(max-width:1300px){
+      justify-content: center;
+    align-items: center;
+    }
+
+    @media(max-width:560px){
+      gap: 1rem;
+    }
+
+    h1 {
+      font-size: 4.3rem;
+      line-height: 1.1;
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+      color: $color-Very-Dark-Blue;
+      @media(max-width:1300px){
+        text-align: center;
+        font-size: 3rem;
+        width: 85%;
+        text-align: center;
+      }
+
+      @media(max-width:560px){
+        font-size: 2.3rem;
+      }
+    }
+    p {
+      color: hsl(257, 7%, 63%);
+      font-size: 1.3rem;
+      font-weight: 400;
+
+      @media(max-width:1300px){
+        width: 85%;
+        text-align: center;
+      }
+    }
+  }
+  .right {
+    
+  @media(max-width:1300px){
+    order: -1;
+  }
+    img {
+      width: 46rem;
+
+      @media(max-width:800px){
+          width: 100%;
+      }
+    }
+  }
+}

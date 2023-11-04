@@ -1,0 +1,18 @@
+<app-advance-statics></app-advance-statics>
+<app-get-started></app-get-started>
+<footer>
+  <div class="container workspace">
+    <div *ngFor="let item of menuItems">
+      <div *ngIf="item.type === 'header'" class="shortly">{{ item.title }}</div>
+      <div *ngIf="item.type === 'text'">
+        <div class="text">{{ item.title }}</div>
+        <ul class="flex-col">
+          <li *ngFor="let subItem of item.items">{{ subItem }}</li>
+        </ul>
+      </div>
+      <div *ngIf="item.type === 'icons'" class="text icons">
+        <img *ngFor="let icon of item.icons" [src]="icon" />
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "https://api.shrtco.de",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

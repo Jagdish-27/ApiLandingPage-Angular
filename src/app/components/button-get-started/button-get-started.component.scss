@@ -1,0 +1,18 @@
+@import "../../../styles.scss";
+
+button {
+  padding: 18px 40px;
+  border-radius: 30px;
+  background: $color-Cyan;
+  font-weight: 700;
+  color: $color-white;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
+}
+button:hover {
+  background: hsl(180deg 39.83% 72.4%);
+  transition: all 0.5s;
+}

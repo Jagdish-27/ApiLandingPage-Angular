@@ -1,0 +1,22 @@
+<section class="workspace">
+  <form [formGroup]="urlShotenForm" (ngSubmit)="onFormSubmit()">
+    <div class="container workspace">
+      <input
+        class="input-box"
+        type="text"
+        placeholder="Shorten a link here...."
+        formControlName="userUrl"
+      />
+      <button type="submit">Shorten It!</button>
+    </div>
+  </form>
+  <div class="result-box " *ngFor="let result of resultBoxes; let i = index">
+    <div class="left">
+      <p>{{ result.originalUrl }}</p>
+    </div>
+    <div class="right">
+      <p>{{ result.shortenedUrl }}</p>
+      <button>Copy</button>
+    </div>
+  </div>
+</section>
